@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<meta name="robots" content="noindex, nofollow">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fluxo Comercial · Costa Galvão Advocacia</title>
@@ -26,7 +27,10 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
 #t3:checked ~ .nav .l3,
 #t4:checked ~ .nav .l4,
 #t5:checked ~ .nav .l5,
-#t6:checked ~ .nav .l6 { background: #6b1c1c; color: #fff; border-color: #6b1c1c; }
+#t6:checked ~ .nav .l6,
+#t7:checked ~ .nav .l7,
+#t8:checked ~ .nav .l8,
+#t9:checked ~ .nav .l9 { background: #6b1c1c; color: #fff; border-color: #6b1c1c; }
 
 .panel { display: none; }
 #t1:checked ~ .wrap #p1 { display: block; }
@@ -35,6 +39,16 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
 #t4:checked ~ .wrap #p4 { display: block; }
 #t5:checked ~ .wrap #p5 { display: block; }
 #t6:checked ~ .wrap #p6 { display: block; }
+#t7:checked ~ .wrap #p7 { display: block; }
+#t8:checked ~ .wrap #p8 { display: block; }
+#t9:checked ~ .wrap #p9 { display: block; }
+
+/* ISENÇÃO DE IR (dourado) */
+.bg-gold  { background: #f3e7c9; color: #5c4313; }
+.en-gold  { background: #E3C98A; color: #3d2c08; }
+.sa.g     { border-left-color: #B8914A; background: #fbf7ee; color: #3d2c08; }
+.vg       { font-weight: 700; color: #7a5a14; }
+.pend     { background: #fff0d6; border: 1px dashed #c98a1c; color: #7a4a00; font-weight: 700; padding: 1px 6px; border-radius: 4px; font-style: normal; }
 
 /* BADGES */
 .badge { display: inline-flex; align-items: center; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin-bottom: 14px; }
@@ -124,13 +138,40 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
 .chip-a { background: #fde5ac; color: #633806; }
 .chip-b { background: #d6eaf8; color: #1a4a7a; }
 .chip-p { background: #e5e3fa; color: #3C3489; }
+
+/* VALORES DE REFERÊNCIA */
+.valores { background:#fff; border:1px solid #e2e1db; border-radius:12px; padding:14px 16px; margin-bottom:20px; }
+.vtit { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:#6b1c1c; margin-bottom:8px; }
+.vgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:6px 14px; }
+.vgrid div { display:flex; justify-content:space-between; gap:8px; font-size:12px; padding:5px 0; border-bottom:1px solid #f0efe9; }
+.vgrid span { color:#777; }
+.vgrid b { color:#1a1a18; text-align:right; }
+/* AVISO */
+.aviso-legal { margin-top:30px; padding-top:14px; border-top:1px solid #e2e1db; font-size:11px; color:#888; line-height:1.6; }
+/* ZIKA (rosa) */
+.bg-rose { background:#f7dde6; color:#6e1f3d; }
+.en-rose { background:#EBB3C6; color:#4a0f26; }
+.sa.r    { border-left-color:#C2557A; background:#fdf3f6; color:#4a0f26; }
+.vr      { font-weight:700; color:#8a2a4d; }
+/* BOTÃO COPIAR */
+.sa, .st, .docs, .ftxt { position:relative; }
+.cpy { position:absolute; top:6px; right:6px; font:600 11px system-ui,sans-serif; font-style:normal; background:#fff; color:#6b1c1c; border:1px solid #d9c9c9; border-radius:6px; padding:4px 9px; cursor:pointer; opacity:.85; }
+.cpy:hover { opacity:1; background:#6b1c1c; color:#fff; }
+.cpy.ok { background:#2F6B4F; color:#fff; border-color:#2F6B4F; }
+.sa, .st, .docs { padding-right:78px; }
+.fech .cpy { background:transparent; color:#f0e0e0; border-color:#8b3333; }
+/* REVISÃO DE FINANCIAMENTO (aço) */
+.bg-steel { background:#dde5ec; color:#2c4458; }
+.en-steel { background:#B7C8D6; color:#1c3346; }
+.sa.s     { border-left-color:#4F6F8A; background:#f2f6f9; color:#1c3346; }
+.vs       { font-weight:700; color:#2c4f6e; }
 </style>
 </head>
 <body>
 
 <div class="header">
   <h1>Fluxo Comercial · Costa Galvão Advocacia</h1>
-  <p>Scripts de alta conversão · Setor Comercial · Uso Interno</p>
+  <p>Scripts de alta conversão · Setor Comercial · Uso interno e sigiloso</p>
   <div class="fluxo-mini">
     <span class="fstep">1 Recepcionar</span>
     <span class="fstep">2 Identificar demanda</span>
@@ -147,6 +188,32 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
   </div>
 </div>
 
+
+<div class="valores">
+  <div class="vtit">📌 Valores de referência 2026 · atualizar todo mês de janeiro</div>
+  <div class="vgrid">
+    <div><span>Salário mínimo</span><b>R$ 1.621,00</b></div>
+    <div><span>Salário-maternidade (4 salários)</span><b>R$ 6.484,00</b></div>
+    <div><span>Contribuição única (SM)</span><b>R$ 178,31</b></div>
+    <div><span>BPC · ¼ do salário por pessoa</span><b>R$ 405,25</b></div>
+    <div><span>BPC · ½ salário (23 municípios)</span><b>R$ 810,50</b></div>
+    <div><span>IR · corte abaixo de 65 anos</span><b>acima de R$ 3 mil</b></div>
+    <div><span>IR · corte com 65 anos ou mais</span><b>acima de R$ 4,9 mil</b></div>
+    <div><span>Zika · indenização</span><b>R$ 50 mil + INPC</b></div>
+  </div>
+  <div class="vtit" style="margin-top:12px">💼 Honorários por serviço</div>
+  <div class="vgrid">
+    <div><span>Auxílio-Acidente</span><b>30% retroativos + R$ 8.000</b></div>
+    <div><span>Salário-Maternidade</span><b>30% do benefício</b></div>
+    <div><span>BPC/LOAS</span><b>30% retroativos + R$ 8.000</b></div>
+    <div><span>Zika</span><b>30% retroativos + 30% da indenização + 30% de 12 parcelas da pensão (e do BPC, se concedido)</b></div>
+    <div><span>Superendividamento</span><b>R$ 3 mil ou R$ 5 mil, até 10x</b></div>
+    <div><span>Home Care</span><b>R$ 8.000, até 12x no cartão + 30% do dano moral</b></div>
+    <div><span>Revisão de Financiamento</span><b>R$ 2.000 pela análise, à vista ou até 10x no cartão</b></div>
+    <div><span>Isenção de IR</span><b>30% do restituído · mín. R$ 2.000</b></div>
+  </div>
+</div>
+
 <!-- RADIOS -->
 <input class="tab-radio" type="radio" name="aba" id="t1" checked>
 <input class="tab-radio" type="radio" name="aba" id="t2">
@@ -154,13 +221,19 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
 <input class="tab-radio" type="radio" name="aba" id="t4">
 <input class="tab-radio" type="radio" name="aba" id="t5">
 <input class="tab-radio" type="radio" name="aba" id="t6">
+<input class="tab-radio" type="radio" name="aba" id="t7">
+<input class="tab-radio" type="radio" name="aba" id="t8">
+<input class="tab-radio" type="radio" name="aba" id="t9">
 
 <div class="nav">
   <label class="nav-lbl l1" for="t1">Auxílio-Acidente</label>
   <label class="nav-lbl l2" for="t2">Salário-Maternidade</label>
   <label class="nav-lbl l3" for="t3">BPC/LOAS</label>
+  <label class="nav-lbl l8" for="t8">Zika</label>
   <label class="nav-lbl l4" for="t4">Superendividamento</label>
+  <label class="nav-lbl l9" for="t9">Revisão de Financiamento</label>
   <label class="nav-lbl l5" for="t5">Home Care</label>
+  <label class="nav-lbl l7" for="t7">Isenção de IR</label>
   <label class="nav-lbl l6" for="t6">Quebra de Objeções</label>
 </div>
 
@@ -179,25 +252,38 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
   <p class="esub">Apresente-se, assuma o controle, responda em até 2 minutos.</p>
   <div class="bloco"><div class="stag">🎙 áudio de abertura</div>
   <div class="sa">Olá! Aqui é [Nome] do Escritório Costa Galvão. Vou te fazer algumas perguntas rápidas pra entender se você tem direito a um benefício do INSS que muita gente acaba não recebendo. Em poucos minutos a gente já consegue saber, tudo bem?</div></div>
+  <div class="nota">Veio por anúncio? Registre no CRM o código que aparece na mensagem de boas-vindas (ex.: AA-V1, BPC-R2, ZK-R3, IR-C1). É ele que mostra qual anúncio traz cliente.</div>
 </div>
 
 <!-- 2 -->
 <div class="etapa">
   <div class="eh"><div class="enum en-teal">2</div><div class="etit">Qualificar o lead — 5 perguntas</div></div>
   <p class="esub"><strong>Pergunta 1 — Gatilho principal</strong></p>
-  <div class="bloco"><div class="sa">Você sofreu algum acidente ou teve alguma doença que deixou uma sequela no seu corpo, mesmo que pequena?</div></div>
+  <div class="bloco"><div class="sa">Você sofreu algum acidente, no trabalho, no trânsito ou em qualquer lugar, que deixou uma sequela no seu corpo, mesmo que pequena?</div></div>
   <div class="yn"><div class="ys">✔ SIM → continua</div><div class="no">✘ NÃO → verificar outro benefício</div></div>
+  <div class="nota">Doença comum, sem acidente, não gera auxílio-acidente. A exceção é a doença ocupacional (causada pelo trabalho), que se equipara a acidente de trabalho. Na dúvida, encaminhe à Dra.</div>
   <p class="esub"><strong>Pergunta 2 — Redução da capacidade</strong></p>
   <div class="bloco"><div class="sa">Depois disso você voltou a trabalhar, mas sente que não consegue mais fazer tudo como antes? Dor, limitação, perda de força ou movimento reduzido?</div></div>
   <p class="esub"><strong>Pergunta 3 — Tipo de segurado</strong></p>
-  <div class="bloco"><div class="sa">Na época do acidente você trabalhava com carteira assinada ou contribuía para o INSS?</div></div>
-  <div class="yn"><div class="ys">✔ SIM → segue</div><div class="no">✘ NÃO → avaliar qualidade de segurado</div></div>
+  <div class="bloco"><div class="sa">Na data do acidente, você trabalhava de carteira assinada, como doméstica, como trabalhador rural, ou era autônomo/MEI?</div></div>
+  <div class="yn"><div class="ys">✔ Carteira assinada, doméstica ou trabalhador rural → segue</div><div class="no">✘ Autônomo/MEI → sem direito ao auxílio-acidente · verificar outro benefício</div></div>
+  <div class="alerta"><strong>Lembrete:</strong> autônomo, MEI (contribuinte individual) e contribuinte facultativo <strong>não têm direito ao auxílio-acidente</strong>, mesmo pagando o INSS. Estava desempregado na data do acidente? Pode estar no período de graça: encaminhe à Dra.</div>
   <p class="esub"><strong>Pergunta 4 — Histórico INSS</strong></p>
   <div class="bloco"><div class="sa">Você chegou a ficar afastado ou receber algum benefício do INSS por causa disso?</div></div>
   <div class="nota">Sim ou não — os dois servem. Negado = revisão. Nunca pediu = oportunidade nova.</div>
   <p class="esub"><strong>Pergunta 5 — Situação atual</strong></p>
   <div class="bloco"><div class="sa">Hoje você trabalha, mas sente que seu corpo não responde mais como antes do acidente?</div></div>
   <div class="nota">Respondeu sim à maioria? Pare de perguntar — lead QUALIFICADO. Siga para o passo 3.</div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-teal">✓</div><div class="etit">Regras: segue qualificado ou não</div></div>
+  <div style="overflow-x:auto; margin-left:38px;">
+  <table class="ref-table">
+  <thead><tr><th>Situação</th><th>Decisão</th></tr></thead>
+  <tbody><tr><td>Acidente de qualquer natureza · sequela que reduz a capacidade · carteira assinada, doméstica ou trabalhador rural na data</td><td><span class="vt">QUALIFICADO</span> → passo 3</td></tr><tr><td>Sequela · desempregado na data do acidente</td><td><span class="vb">ENCAMINHAR À DRA.</span> → verificar período de graça</td></tr><tr><td>Doença sem acidente, possivelmente causada pelo trabalho</td><td><span class="vb">ENCAMINHAR À DRA.</span> → pode ser doença ocupacional</td></tr><tr><td>Autônomo, MEI ou contribuinte facultativo na data do acidente</td><td><span class="vw">SEM DIREITO</span> ao auxílio-acidente → verificar auxílio-doença ou aposentadoria por incapacidade</td></tr><tr><td>Já aposentado</td><td><span class="vw">SEM DIREITO</span> → o auxílio-acidente não se acumula com aposentadoria · verificar outro serviço</td></tr><tr><td>Sem sequela ou sem limitação no trabalho</td><td><span class="vw">NÃO QUALIFICADO</span> → verificar outro benefício</td></tr></tbody>
+  </table>
+  </div>
 </div>
 
 <!-- 3 -->
@@ -207,15 +293,16 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
   <div class="sa">Pelo que você me contou, existe uma <span class="vt">grande chance de você ter direito ao Auxílio-Acidente</span>. Esse é um benefício pago justamente para quem ficou com sequela, mesmo continuando a trabalhar.</div>
   <div class="stag">🎙 áudio 2 — autoridade</div>
   <div class="sa">Somos especialistas nessa área, atuamos em todo o Brasil e há <span class="vt">mais de 10 anos</span> ajudamos pessoas nessa situação, com centenas de benefícios já concedidos.</div>
-  <div class="stag">🎙 áudio 3 — confiança (lead de outro estado)</div>
-  <div class="sa">Eu sei que você nunca me viu antes e que hoje tem muito golpe por aí. Por isso quero que você fique 100% à vontade: somos um escritório registrado na OAB — você pode verificar nosso número agora mesmo antes de assinar qualquer coisa. Atendemos em todo o Brasil há mais de 10 anos, tudo é feito digitalmente com validade jurídica, e você não paga nada agora.</div></div>
+  <div class="stag">🎙 áudio 3 · quem vai cuidar do seu caso</div>
+  <div class="sa">Só para você conhecer quem vai cuidar do seu caso: somos um escritório registrado na OAB, com mais de 10 anos de atuação em todo o Brasil. Você pode acompanhar nosso trabalho no Instagram @costagalvaoadvocacia. Tudo é feito digitalmente, com validade jurídica, e você não paga nada agora.</div></div>
+  <div class="nota">Nunca fale em golpe por iniciativa própria. Se o lead demonstrar desconfiança, use a Objeção 08.</div>
 </div>
 
 <!-- 4 -->
 <div class="etapa">
   <div class="eh"><div class="enum en-teal">4</div><div class="etit">Mostrar valor — antes do preço</div></div>
   <div class="bloco"><div class="stag">🎙 o que ele tem a ganhar</div>
-  <div class="sa">Esse tipo de processo costuma gerar em média <span class="vt">R$ 20.000 em valores retroativos</span>, além de um pagamento mensal de <span class="vt">meio salário mínimo</span> que você recebe até se aposentar — mesmo trabalhando.</div>
+  <div class="sa">Esse tipo de processo costuma gerar em média <span class="vt">R$ 20.000 em valores retroativos</span>, além de um pagamento mensal de <span class="vt">50% do salário de benefício</span> que você recebe até se aposentar — mesmo trabalhando.</div>
   <div class="stag">🎙 o que ele perde ao não agir</div>
   <div class="sa">Cada mês que passa sem dar entrada é um mês a menos de retroativo. O INSS paga com juros a partir da data do pedido — esse dinheiro está parado esperando por você.</div>
   <div class="stag">🎙 quebra do medo financeiro</div>
@@ -270,6 +357,7 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
   <div class="eh"><div class="enum en-wine">1</div><div class="etit">Recepcionar e identificar a demanda</div></div>
   <div class="bloco"><div class="stag">🎙 mensagem inicial</div>
   <div class="sa w">Oi, tudo bem? Aqui é [Nome] do Escritório Costa Galvão. Somos especialistas em garantir o Salário-Maternidade para mães desempregadas ou que nunca contribuíram. Vou analisar o seu caso agora, tá bom!</div></div>
+  <div class="nota">Veio por anúncio? Registre no CRM o código que aparece na mensagem de boas-vindas (ex.: AA-V1, BPC-R2, ZK-R3, IR-C1). É ele que mostra qual anúncio traz cliente.</div>
 </div>
 
 <div class="etapa">
@@ -285,9 +373,19 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
 </div>
 
 <div class="etapa">
+  <div class="eh"><div class="enum en-wine">✓</div><div class="etit">Regras: segue qualificado ou não</div></div>
+  <div style="overflow-x:auto; margin-left:38px;">
+  <table class="ref-table">
+  <thead><tr><th>Situação</th><th>Decisão</th></tr></thead>
+  <tbody><tr><td>Está no período de graça (saiu de emprego de carteira assinada recentemente ou recebeu seguro-desemprego)</td><td><span class="vt">QUALIFICADO</span> → Caso B</td></tr><tr><td>Gestante até o 5º mês, sem contribuição e fora do período de graça</td><td><span class="vt">QUALIFICADO</span> → Caso A (contribuição única)</td></tr><tr><td>Passou do 5º mês, sem contribuição e fora do período de graça</td><td><span class="vw">SEM DIREITO</span> → verificar BPC (mãe ou criança com deficiência) e pedir indicação</td></tr><tr><td>Microcefalia ou suspeita de Zika na gestação</td><td><span class="vb">ENCAMINHAR À DRA.</span> → verificar aba Zika e a prorrogação de 60 dias do salário-maternidade</td></tr><tr><td>Lead idoso ou fora do perfil de gestante/mãe</td><td><span class="vw">NÃO QUALIFICADO</span> → 65+ com baixa renda: verificar BPC idoso</td></tr></tbody>
+  </table>
+  </div>
+</div>
+
+<div class="etapa">
   <div class="eh"><div class="enum en-red" style="background:#8B2020;color:#fff;">3</div><div class="etit">Validação + autoridade + confiança</div></div>
   <div class="bloco"><div class="stag">🎙 áudio — excelente notícia</div>
-  <div class="sa w">Pelas informações que você me passou, tenho uma excelente notícia: você tem grandes chances de receber o seu benefício com a nossa representação! Mas preciso ser sincera: o INSS nega muitos pedidos feitos do jeito errado, e o tempo é nosso maior inimigo agora. Se o bebê nascer sem o preparo certo, você pode perder mais de <span class="vw">R$ 6.000</span>.</div>
+  <div class="sa w">Pelas informações que você me passou, tenho uma excelente notícia: você tem grandes chances de receber o seu benefício com a nossa representação! Mas, com toda a sinceridade: o INSS nega muitos pedidos feitos do jeito errado, e o tempo é nosso maior inimigo agora. Se o bebê nascer sem o preparo certo, você pode perder mais de <span class="vw">R$ 6.000</span>.</div>
   <div class="stag">📸 enviar print de carta de concessão recente + áudio</div>
   <div class="sa w">Olha esse caso aqui: preparamos tudo enquanto ela estava no mesmo tempo de gestação que você. O bebê nasceu, ela nos mandou a certidão e em 2 dias o benefício foi liberado sem dor de cabeça nenhuma. Esse é o nosso trabalho.</div>
   <div class="stag">🎙 reforçar confiança / "onde vocês são?"</div>
@@ -310,7 +408,7 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
   <p class="esub"><strong>Caso B — Período de graça</strong></p>
   <div class="bloco"><div class="sa w">No seu caso não precisará pagar nada para o INSS. Vamos validar todas as contribuições que você já tem. Tudo tem que ser feito agora, antes do bebê nascer. A única pendência será nos enviar a certidão de nascimento quando o bebê chegar.</div></div>
   <p class="esub"><strong>Honorários — ambos os casos</strong></p>
-  <div class="bloco"><div class="sa w">Você não paga nada agora de honorários. Só cobramos quando o benefício for aprovado e cair na sua conta. Você receberá <span class="vw">R$ 6.484,00</span> — desse valor você paga 30% ao escritório e fica com <span class="vw">R$ 4.538,80</span>. Sem a gente: recebe zero. Com a gente: recebe R$ 4.538,80. Apenas você pode receber esse benefício, diretamente em uma agência bancária aí na sua cidade.</div></div>
+  <div class="bloco"><div class="sa w">Você não paga nada agora de honorários. Só cobramos quando o benefício for aprovado e cair na sua conta. Você receberá <span class="vw">R$ 6.484,00</span> — desse valor você paga 30% ao escritório e fica com <span class="vw">R$ 4.538,80</span>. Pedindo sozinha, o risco de indeferimento é bem maior. Com a nossa representação, R$ 4.538,80 ficam com você. Apenas você pode receber esse benefício, diretamente em uma agência bancária aí na sua cidade.</div></div>
 </div>
 
 <div class="etapa">
@@ -343,13 +441,15 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
 <!-- ========================================================= -->
 <div id="p3" class="panel">
 <span class="badge bg-amber">Idoso 65+ ou Deficiente · Sem custo inicial · 30% retroativos + R$ 8.000 pela concessão</span>
-<div class="princip"><strong>Princípio base:</strong> Identifique primeiro: é para o próprio lead ou para familiar? É idoso (+65) ou deficiente/incapaz? A renda familiar per capita deve ser abaixo de ¼ do salário mínimo. Responda em até 2 minutos.</div>
+<div class="princip"><strong>Princípio base:</strong> Identifique primeiro: é para o próprio lead ou para familiar? É idoso (+65) ou deficiente/incapaz? A renda familiar por pessoa deve ser de <strong>até ¼ do salário mínimo</strong>. Em <strong>Garanhuns e região</strong> (23 municípios da ACP nº 0000083-10.2007.4.05.8305/PE), o limite é de <strong>até ½ salário mínimo por pessoa</strong>. Em todo o país, o benefício de até 1 salário mínimo de um idoso ou de uma pessoa com deficiência da casa fica fora da conta. Responda em até 2 minutos.</div>
+<div class="nota" style="margin-left:0; margin-bottom:18px;"><strong>📍 Municípios com a regra de ½ salário mínimo:</strong> Angelim, Águas Belas, Bom Conselho, Brejão, Caetés, Calçado, Canhotinho, Capoeiras, Correntes, Garanhuns, Iati, Ibirajuba, Jucati, Jupi, Lagoa do Ouro, Lajedo, Palmeirina, Paranatama, Quipapá, Saloá, São Bento do Una, São João e Terezinha. Confira sempre a cidade do lead antes de aplicar o limite.</div>
 
 <div class="etapa">
   <div class="eh"><div class="enum en-wine">1</div><div class="etit">Recepcionar e identificar a demanda</div></div>
   <div class="bloco"><div class="stag">🎙 abertura</div>
   <div class="sa a">Olá! Aqui é [Nome] do Escritório Costa Galvão. Vou te fazer algumas perguntas rápidas para entender a situação e ver se conseguimos garantir esse benefício. Pode ser bem rápido, tudo bem?</div></div>
   <p class="esub">Se o lead já informa a demanda claramente → vá direto para a qualificação.</p>
+  <div class="nota">Veio por anúncio? Registre no CRM o código que aparece na mensagem de boas-vindas (ex.: AA-V1, BPC-R2, ZK-R3, IR-C1). É ele que mostra qual anúncio traz cliente.</div>
 </div>
 
 <div class="etapa">
@@ -376,26 +476,37 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
 </div>
 
 <div class="etapa">
+  <div class="eh"><div class="enum en-amber">✓</div><div class="etit">Regras: segue qualificado ou não</div></div>
+  <div style="overflow-x:auto; margin-left:38px;">
+  <table class="ref-table">
+  <thead><tr><th>Situação</th><th>Decisão</th></tr></thead>
+  <tbody><tr><td>65 anos ou mais · renda por pessoa de até ¼ do salário mínimo (até ½ nos 23 municípios)</td><td><span class="vt">QUALIFICADO</span> → passo 4</td></tr><tr><td>Pessoa com deficiência ou limitação de 2 anos ou mais · com laudo · renda dentro do limite</td><td><span class="vt">QUALIFICADO</span> → passo 4</td></tr><tr><td>Mesma situação, mas sem laudo</td><td><span class="va">QUALIFICADO CONDICIONAL</span> → orientar a obter o laudo</td></tr><tr><td>Cadastro Único desatualizado</td><td><span class="va">QUALIFICADO CONDICIONAL</span> → orientar a atualizar o CadÚnico antes do protocolo</td></tr><tr><td>Renda um pouco acima do limite</td><td><span class="vb">ENCAMINHAR À DRA.</span> → pode haver despesas que permitam a análise</td></tr><tr><td>Criança com microcefalia ou síndrome do Zika</td><td><span class="vt">QUALIFICADO</span> → verificar também a aba Zika (pensão + indenização)</td></tr><tr><td>Pedido em análise ou negado</td><td>→ Cenário B ou C do passo 2</td></tr></tbody>
+  </table>
+  </div>
+</div>
+
+<div class="etapa">
   <div class="eh"><div class="enum en-amber">4</div><div class="etit">Validação + autoridade + confiança</div></div>
   <div class="bloco"><div class="stag">🎙 validar</div>
-  <div class="sa a">Com base no que você me contou, existe uma boa possibilidade de conseguirmos esse benefício para você. O BPC/LOAS é um salário mínimo mensal pago pelo INSS — <span class="va">para o resto da vida</span> — e muita gente perde por não ter orientação especializada.</div>
+  <div class="sa a">Com base no que você me contou, existe uma boa possibilidade de conseguirmos esse benefício para você. O BPC/LOAS é <span class="va">um salário mínimo todo mês</span>, pago pelo INSS, e muita gente perde esse direito por falta de orientação especializada.</div>
   <div class="stag">🎙 confiança / "onde vocês são?"</div>
-  <div class="sa a">Sei que você não me conhece e que existe muito golpe por aí. Por isso: somos um escritório registrado na OAB, você pode verificar agora antes de qualquer assinatura. Atuamos em todo o Brasil há mais de 10 anos — nossa equipe cuida de tudo digitalmente, você assina do celular sem sair de casa. Se preferir, posso marcar uma videochamada com nossa advogada para você se sentir mais seguro.</div></div>
+  <div class="sa a">Só para você conhecer quem vai cuidar do seu caso: somos um escritório registrado na OAB, com mais de 10 anos de atuação em todo o Brasil. Nossa equipe cuida de tudo digitalmente, e você assina pelo celular, sem sair de casa. Se preferir, posso marcar uma videochamada com nossa advogada.</div></div>
+  <div class="nota">Nunca fale em golpe por iniciativa própria. Se o lead demonstrar desconfiança, use a Objeção 08.</div>
 </div>
 
 <div class="etapa">
   <div class="eh"><div class="enum en-amber">5</div><div class="etit">Mostrar valor — antes do preço</div></div>
   <div class="bloco"><div class="stag">🎙 o que tem a ganhar</div>
-  <div class="sa a">D. [Nome], esse benefício é <span class="va">um salário mínimo mensal para o resto da vida</span>. Imagine o que isso muda no dia a dia — nas despesas, na dignidade, na qualidade de vida. E ainda os retroativos: todo o período que ficou esperando será pago de uma vez pelo INSS, geralmente entre <span class="va">R$ 10.000 e R$ 15.000</span>.</div>
+  <div class="sa a">D. [Nome], esse benefício é <span class="va">um salário mínimo todo mês</span>. Imagine o que isso muda no dia a dia — nas despesas, na dignidade, na qualidade de vida. E ainda os retroativos: todo o período que ficou esperando será pago de uma vez pelo INSS, geralmente entre <span class="va">R$ 10.000 e R$ 15.000</span>.</div>
   <div class="stag">🎙 o que perde ao não agir</div>
-  <div class="sa a">Cada mês que passa sem dar entrada é um mês a menos de retroativo. E esse direito tem prazo — depois que passa, não tem mais como recuperar.</div>
+  <div class="sa a">Cada mês que passa sem dar entrada é um mês de benefício que fica para trás, porque o INSS paga a partir da data do pedido.</div>
   <div class="stag">🎙 quebra do medo financeiro</div>
   <div class="sa a">Você não tem despesa nenhuma agora. Só paga ao escritório no final se a gente realmente conseguir esse benefício.</div></div>
 </div>
 
 <div class="etapa">
   <div class="eh"><div class="enum en-amber">6</div><div class="etit">Explicar a representação — "técnica sanduíche"</div></div>
-  <div class="bloco"><div class="sa a">D. [Nome], agora vou lhe explicar como funciona nossa representação. Não cobramos valor nenhum inicial — somente ao final, e só se a gente conseguir o benefício. Aqui a gente só assume o compromisso quando realmente existe possibilidade, e no seu caso existe sim. Conseguindo o benefício, a senhora vai pagar <span class="va">30% dos retroativos</span> mais uma taxa fixa de <span class="va">R$ 8.000 pela concessão</span> — de uma única vez. Como os retroativos giram entre R$ 10.000 e R$ 15.000, o cliente paga os honorários e ainda fica com um bom dinheiro no bolso. No mês seguinte o benefício mensal começa a cair e o escritório não recebe mais nada.</div></div>
+  <div class="bloco"><div class="stag">🎙 áudio 1</div><div class="sa a">D. [Nome], agora vou lhe explicar como funciona nossa representação. Não cobramos valor nenhum inicial — somente ao final, e só se a gente conseguir o benefício. Aqui a gente só assume o compromisso quando realmente existe possibilidade, e no seu caso existe sim.</div><div class="stag">🎙 áudio 2</div><div class="sa a">Conseguindo o benefício, a senhora vai pagar <span class="va">30% dos retroativos</span> mais uma taxa fixa de <span class="va">R$ 8.000 pela concessão</span> — de uma única vez. Como os retroativos giram entre R$ 10.000 e R$ 15.000, o cliente paga os honorários e ainda fica com um bom dinheiro no bolso. No mês seguinte o benefício mensal começa a cair e o escritório não recebe mais nada.</div></div>
 </div>
 
 <div class="etapa">
@@ -417,6 +528,110 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
 
 
 <!-- ========================================================= -->
+<!-- P8 · ZIKA -->
+<!-- ========================================================= -->
+<div id="p8" class="panel">
+<span class="badge bg-rose">Síndrome congênita do Zika · Lei 15.156/2025 · Indenização + pensão vitalícia · Sem custo inicial · 30% no êxito</span>
+<div class="princip"><strong>Princípio base:</strong> Quem chega aqui é, quase sempre, a mãe ou a responsável por uma criança ou jovem com a síndrome congênita do Zika, muitas vezes com microcefalia. São famílias cansadas, que já bateram em muitas portas. O tom é de <strong>acolhimento</strong>: escute primeiro, sem pressa e sem jargão. A Lei 15.156/2025 garante <strong>indenização de R$ 50 mil</strong> e <strong>pensão especial mensal vitalícia no valor do teto do INSS</strong>, <strong>sem limite de idade</strong> e <strong>sem exigir baixa renda</strong>. A pensão pode ser recebida junto com o BPC. Responda em até 2 minutos.</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-rose">1</div><div class="etit">Recepcionar com acolhimento</div></div>
+  <div class="bloco"><div class="stag">🎙 abertura</div>
+  <div class="sa r">Olá! Aqui é [Nome] do Escritório Costa Galvão. Que bom que você procurou a gente. Eu sei que a rotina de quem cuida de uma criança com a síndrome do Zika é puxada, então vou ser bem objetivo(a): vou te fazer algumas perguntas rápidas para entender a situação e ver quais direitos a sua família tem. Tudo bem?</div></div>
+  <p class="esub">Se a mãe começar a desabafar, deixe. Responda com uma frase de acolhimento antes de seguir para as perguntas.</p>
+  <div class="bloco"><div class="stag">💬 acolhimento</div>
+  <div class="sa r">Imagino o quanto tem sido difícil. Você está fazendo muito por ele(a). Agora deixa a gente cuidar da parte burocrática para você.</div></div>
+  <div class="nota">Veio por anúncio? Registre no CRM o código que aparece na mensagem de boas-vindas (ex.: ZK-R1, ZK-R2, ZK-R3, ZK-C1). É ele que mostra qual anúncio traz cliente.</div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-rose">2</div><div class="etit">Qualificar o lead: perguntas de filtro</div></div>
+  <p class="esub"><strong>Pergunta 1 · para quem é</strong></p>
+  <div class="bloco"><div class="sa r">O direito é para o seu filho(a) ou para outra criança da família? Qual o nome e o ano de nascimento dele(a)? E em qual cidade ele(a) nasceu?</div></div>
+  <p class="esub"><strong>Pergunta 2 · diagnóstico</strong></p>
+  <div class="bloco"><div class="sa r">Ele(a) tem diagnóstico de microcefalia ou de síndrome congênita do Zika? Algum médico já escreveu isso em laudo, relatório ou exame?</div></div>
+  <p class="esub"><strong>Pergunta 3 · gestação</strong></p>
+  <div class="bloco"><div class="sa r">Durante a gravidez, você teve Zika ou algum médico suspeitou de Zika? Lembra se teve febre, manchas vermelhas na pele ou coceira?</div></div>
+  <div class="nota">A mãe não precisa ter tido exame positivo de Zika na gravidez. O que importa é o diagnóstico da criança. Se ela não lembrar, siga normalmente.</div>
+  <p class="esub"><strong>Pergunta 4 · benefícios atuais</strong></p>
+  <div class="bloco"><div class="sa r">Hoje ele(a) recebe algum benefício do INSS? Por exemplo: BPC/LOAS, a pensão especial do Zika de um salário mínimo, ou outro?</div></div>
+  <p class="esub"><strong>Pergunta 5 · pedido da nova pensão</strong></p>
+  <div class="bloco"><div class="sa r">Você já pediu a nova pensão do Zika, a de 2025, ou a indenização de R$ 50 mil? Se pediu, já teve alguma resposta: aprovado, em análise ou negado?</div></div>
+  <p class="esub"><strong>Pergunta 6 · documentos</strong></p>
+  <div class="bloco"><div class="sa r">Você tem com você a certidão de nascimento dele(a), RG ou CPF dele(a) e os seus documentos?</div></div>
+  <p class="esub"><strong>Pergunta 7 · laudo</strong></p>
+  <div class="bloco"><div class="sa r">Você tem algum laudo, relatório médico ou exame que fale da microcefalia ou da síndrome do Zika? Pode ser antigo. Se tiver, me manda uma foto aqui.</div></div>
+  <div class="yn"><div class="ys">✔ Tem laudo → caminho mais rápido</div><div class="no">✘ Não tem → orientar a pedir relatório ao médico que acompanha</div></div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-rose">✓</div><div class="etit">Regras: segue qualificado ou não</div></div>
+  <div style="overflow-x:auto; margin-left:38px;">
+  <table class="ref-table">
+  <thead><tr><th>Situação</th><th>Decisão</th></tr></thead>
+  <tbody>
+  <tr><td>Diagnóstico de síndrome congênita do Zika · ainda não pediu a nova pensão</td><td><span class="vt">QUALIFICADO · PRIORIDADE</span> → passo 3</td></tr>
+  <tr><td>Recebe só o BPC</td><td><span class="vt">QUALIFICADO · PRIORIDADE</span> → a pensão pode ser somada ao BPC</td></tr>
+  <tr><td>Recebe a pensão antiga da Lei 13.985/2020 (um salário mínimo)</td><td><span class="vt">QUALIFICADO</span> → verificar se a nova pensão e a indenização já foram pagas</td></tr>
+  <tr><td>Pediu e foi negado</td><td><span class="vt">QUALIFICADO</span> → caminho judicial · pedir a carta de negativa</td></tr>
+  <tr><td>Pedido em análise há muito tempo</td><td><span class="vt">QUALIFICADO</span> → pedir o protocolo e a data do pedido</td></tr>
+  <tr><td>Microcefalia sem relação confirmada com o Zika</td><td><span class="vb">ENCAMINHAR À DRA.</span> → avaliar o laudo antes de qualquer promessa</td></tr>
+  <tr><td>Bebê recém-nascido</td><td><span class="vt">QUALIFICADO</span> → verificar também a prorrogação de 60 dias do salário-maternidade</td></tr>
+  <tr><td>Já recebe a nova pensão e a indenização</td><td><span class="vw">SEM NOVA DEMANDA</span> → agradecer e pedir indicação de outras famílias</td></tr>
+  </tbody>
+  </table>
+  </div>
+  <p style="height:8px"></p>
+  <div class="alerta">Não existe limite de idade. Jovens com 10, 11 anos ou mais também têm direito. Não descarte o lead pela idade da criança.</div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-rose">3</div><div class="etit">Validar a situação</div></div>
+  <div class="bloco"><div class="sa r">Pelo que você me contou, a situação dele(a) se encaixa no que a lei nova prevê. Muitas famílias ainda não sabem desse direito, e você fez muito bem em procurar.</div></div>
+  <div class="nota">Nunca diga que o direito está garantido. A análise final é sempre da Dra.</div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-rose">4</div><div class="etit">Mostrar o que a lei prevê: antes do preço</div></div>
+  <div class="bloco"><div class="stag">🎙 o que a lei prevê</div>
+  <div class="sa r">A Lei 15.156, de 2025, prevê duas coisas para as crianças com a síndrome do Zika. A primeira é uma <span class="vr">indenização de R$ 50 mil</span>, paga uma vez só, corrigida pela inflação e sem desconto de imposto de renda. A segunda é uma <span class="vr">pensão especial todo mês, para a vida toda, no valor do teto do INSS</span>, com 13º.</div>
+  <div class="stag">🎙 junto com o BPC</div>
+  <div class="sa r">E se ele(a) já recebe o BPC, não perde: a pensão pode ser recebida junto.</div>
+  <div class="stag">🎙 o que perde ao esperar</div>
+  <div class="sa r">A pensão é paga a partir da data do pedido. Então cada mês sem pedir é um mês que não volta.</div></div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-rose">5</div><div class="etit">Explicar a representação + honorários</div></div>
+  <div class="bloco"><div class="stag">🎙 áudio 1 · representação</div>
+  <div class="sa r">Nós cuidamos de tudo: juntamos os laudos, fazemos o pedido e acompanhamos até o fim, inclusive na Justiça se for preciso. Você não precisa sair de casa e não paga nada agora.</div>
+  <div class="stag">🎙 áudio 2 · honorários</div>
+  <div class="sa r">Os honorários só são pagos quando o direito for reconhecido e os valores forem liberados. Eles são de <span class="vr">30% sobre o que a família receber</span>: 30% dos valores atrasados, 30% da indenização e 30% das 12 primeiras parcelas da pensão. Depois disso, a pensão vitalícia fica inteira com a família.</div>
+  <div class="stag">🎙 complemento · só se o BPC também for pedido no processo</div>
+  <div class="sa r">E como vamos pedir também o BPC, entram ainda 30% das 12 primeiras parcelas do BPC.</div></div>
+  <div class="nota">Se a família já recebe o BPC, use só os áudios 1 e 2. O complemento do BPC entra apenas quando o escritório for pedir o BPC junto.</div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-gray">6</div><div class="etit">Solicitar documentos iniciais</div></div>
+  <div class="docs">📂 <strong>Documentos para procuração e contrato:</strong><br>• Certidão de nascimento da criança<br>• RG e CPF da criança (se tiver)<br>• RG e CPF da mãe ou responsável<br>• Comprovante de endereço (água ou luz)<br>• Laudos, relatórios médicos e exames sobre a microcefalia ou a síndrome do Zika<br>• Cartão do SUS da criança<br>• Carta de concessão do BPC ou da pensão antiga (se tiver)<br>• Carta de negativa ou protocolo do pedido (se tiver)</div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-green">7</div><div class="etit">Contrato + assinatura + boas-vindas</div></div>
+  <div class="fech">
+    <div class="flbl">🎙 Antes de enviar o link</div>
+    <div class="ftxt">[Nome], vou te enviar agora a procuração e o contrato para assinar. Não precisa imprimir nada, você assina direto na tela do celular. Vou mandar também um vídeo curtinho mostrando como faz.</div>
+    <div class="fdiv"></div>
+    <div class="flbl">✅ Após assinatura · boas-vindas</div>
+    <div class="fbv">Seja bem-vinda, [Nome]! A partir de agora a gente cuida dessa parte por você, e vamos te manter informada de cada passo. Qualquer dúvida, é só chamar aqui. Peça à advogada responsável que grave um vídeo pessoal de boas-vindas para a família.</div>
+  </div>
+</div>
+</div><!-- /p8 -->
+
+
+
+<!-- ========================================================= -->
 <!-- P4 · SUPERENDIVIDAMENTO -->
 <!-- ========================================================= -->
 <div id="p4" class="panel">
@@ -427,6 +642,7 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
   <div class="eh"><div class="enum en-wine">1</div><div class="etit">Recepcionar e identificar a demanda</div></div>
   <div class="bloco"><div class="stag">🎙 abertura</div>
   <div class="sa p">Oi, tudo bem? Aqui é [Nome] do Escritório Costa Galvão. Vou te fazer algumas perguntas rápidas para entender sua situação e ver o melhor caminho para você sair das dívidas de vez. Pode ser bem rápido, tudo bem?</div></div>
+  <div class="nota">Veio por anúncio? Registre no CRM o código que aparece na mensagem de boas-vindas (ex.: AA-V1, BPC-R2, ZK-R3, IR-C1). É ele que mostra qual anúncio traz cliente.</div>
 </div>
 
 <div class="etapa">
@@ -446,17 +662,30 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
 </div>
 
 <div class="etapa">
+  <div class="eh"><div class="enum en-purple">✓</div><div class="etit">Regras: segue qualificado ou não</div></div>
+  <div style="overflow-x:auto; margin-left:38px;">
+  <table class="ref-table">
+  <thead><tr><th>Situação</th><th>Decisão</th></tr></thead>
+  <tbody><tr><td>Dívidas de consumo (bancos, cartão, financeiras, lojas) acima de R$ 20 mil, comprometendo o mínimo para viver</td><td><span class="vt">QUALIFICADO</span> → passo 3</td></tr><tr><td>Dívidas abaixo de R$ 20 mil</td><td><span class="vw">NÃO QUALIFICADO</span> → encerrar com cuidado e orientar alternativas</td></tr><tr><td>Dívida principal é financiamento de veículo</td><td>→ seguir a aba Revisão de Financiamento</td></tr><tr><td>Dívidas entre R$ 30 mil e R$ 40 mil, ou acima de R$ 60 mil</td><td><span class="vb">ENCAMINHAR À DRA.</span> → confirmar honorários com a supervisão</td></tr><tr><td>Aposentado com muitos empréstimos consignados</td><td><span class="vt">QUALIFICADO</span> → verificar também a aba Isenção de IR, se tiver doença grave</td></tr></tbody>
+  </table>
+  </div>
+  <p style="height:8px"></p>
+  <div class="alerta">Ficam fora do procedimento: financiamento imobiliário, crédito rural, dívidas com garantia real e impostos.</div>
+</div>
+
+<div class="etapa">
   <div class="eh"><div class="enum en-purple">3</div><div class="etit">Validação + autoridade + confiança</div></div>
   <div class="bloco"><div class="stag">🎙 validar</div>
   <div class="sa p">Com o que você me contou, você está exatamente no perfil para o <span class="vp">procedimento de superendividamento</span> — uma lei federal de 2021 que obriga os credores a negociarem dentro da sua real capacidade de pagamento, com proteção judicial.</div>
   <div class="stag">🎙 confiança / "onde vocês são?"</div>
-  <div class="sa p">Sei que você não me conhece e que existem muitas promessas falsas por aí — especialmente para quem está endividado. Por isso quero ser direto: somos um escritório registrado na OAB, você pode verificar agora antes de qualquer assinatura. Atuamos em todo o Brasil há mais de 10 anos. Tudo é feito digitalmente, com segurança jurídica total. Golpe cobra antes — a gente só cobra depois de resolver.</div></div>
+  <div class="sa p">Só para você conhecer quem vai cuidar do seu caso: somos um escritório registrado na OAB, com mais de 10 anos de atuação em todo o Brasil. Tudo é feito digitalmente, com segurança jurídica, e você acompanha cada etapa do processo pelo celular.</div></div>
+  <div class="nota">Nunca fale em golpe por iniciativa própria. Se o lead demonstrar desconfiança, use a Objeção 08.</div>
 </div>
 
 <div class="etapa">
   <div class="eh"><div class="enum en-purple">4</div><div class="etit">Mostrar valor — antes do preço</div></div>
   <div class="bloco"><div class="stag">🎙 o que tem a ganhar</div>
-  <div class="sa p">Essa lei obriga os credores a sentarem à mesa e negociarem dentro da sua real capacidade de pagamento. Com proteção judicial, seus bens ficam protegidos e os juros param de crescer. É uma saída real — não uma promessa.</div>
+  <div class="sa p">Essa lei obriga os credores a sentarem à mesa e negociarem dentro da sua real capacidade de pagamento. Com o processo, a negociação passa a ser conduzida com o acompanhamento do Judiciário, e o plano de pagamento é montado respeitando o mínimo que você precisa para viver. É uma saída real, prevista em lei.</div>
   <div class="stag">🎙 o que perde ao não agir</div>
   <div class="sa p">Sem entrar nesse procedimento, os juros continuam correndo, o nome segue negativado e a dívida de [valor] pode dobrar em poucos anos. Cada mês de inação é mais dinheiro perdido e mais longe fica a possibilidade de reconstruir sua vida financeira.</div></div>
 </div>
@@ -485,16 +714,105 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
 
 
 <!-- ========================================================= -->
+<!-- P9 · REVISÃO DE FINANCIAMENTO DE VEÍCULOS -->
+<!-- ========================================================= -->
+<div id="p9" class="panel">
+<span class="badge bg-steel">Financiamento de carro ou moto · Análise de viabilidade R$ 2.000 · À vista ou até 10x em qualquer cartão · Atendente conduz até o contrato e o pagamento</span>
+<div class="princip"><strong>Princípio base:</strong> O papel do atendente aqui é qualificar o lead, explicar a análise de viabilidade, informar o valor, receber os documentos e enviar o contrato da análise. Depois da assinatura e do pagamento o caso segue com a advogada. <strong>Nunca prometa redução de parcela nem devolução de valores</strong>: só a análise mostra se existe cobrança abusiva no contrato. Responda em até 2 minutos.</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-steel">1</div><div class="etit">Recepcionar e identificar a demanda</div></div>
+  <div class="bloco"><div class="stag">🎙 abertura</div>
+  <div class="sa s">Olá! Aqui é [Nome] do Escritório Costa Galvão. Vou te fazer algumas perguntas rápidas sobre o seu financiamento para entender se vale a pena analisar o seu contrato. Tudo bem?</div></div>
+  <div class="nota">Veio por anúncio? Registre no CRM o código que aparece na mensagem de boas-vindas (ex.: RF-V1, RF-C1). É ele que mostra qual anúncio traz cliente.</div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-steel">2</div><div class="etit">Qualificar o lead: perguntas de filtro</div></div>
+  <p class="esub"><strong>Pergunta 1 · o contrato</strong></p>
+  <div class="bloco"><div class="sa s">O financiamento é de carro ou de moto? Em qual banco ou financeira? E em que ano você assinou o contrato?</div></div>
+  <p class="esub"><strong>Pergunta 2 · parcelas</strong></p>
+  <div class="bloco"><div class="sa s">Qual o valor da parcela, quantas são no total e quantas você já pagou?</div></div>
+  <p class="esub"><strong>Pergunta 3 · situação atual</strong></p>
+  <div class="bloco"><div class="sa s">As parcelas estão em dia ou tem alguma atrasada? Você recebeu alguma notificação do banco?</div></div>
+  <div class="alerta">Recebeu notificação ou já existe ação de busca e apreensão? Encaminhe à Dra. <strong>com urgência</strong>, no mesmo dia.</div>
+  <p class="esub"><strong>Pergunta 4 · veículo</strong></p>
+  <div class="bloco"><div class="sa s">O veículo continua com você?</div></div>
+  <p class="esub"><strong>Pergunta 5 · documento</strong></p>
+  <div class="bloco"><div class="sa s">Você tem o contrato do financiamento completo? Se não tiver, dá para pedir ao banco ou baixar no aplicativo dele.</div></div>
+  <p class="esub"><strong>Pergunta 6 · cobranças extras</strong></p>
+  <div class="bloco"><div class="sa s">Na hora de fechar o financiamento, te ofereceram algum seguro, ou cobraram tarifa de cadastro, de avaliação do bem ou de registro do contrato?</div></div>
+  <div class="nota">O lead não precisa saber responder a pergunta 6 com certeza. O contrato mostra isso na análise.</div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-steel">✓</div><div class="etit">Regras: segue qualificado ou não</div></div>
+  <div style="overflow-x:auto; margin-left:38px;">
+  <table class="ref-table">
+  <thead><tr><th>Situação</th><th>Decisão</th></tr></thead>
+  <tbody>
+  <tr><td>Financiamento ativo de carro ou moto, com o contrato em mãos</td><td><span class="vt">QUALIFICADO</span> → passo 3</td></tr>
+  <tr><td>Financiamento ativo, mas sem o contrato</td><td><span class="va">QUALIFICADO CONDICIONAL</span> → orientar a pedir o contrato ao banco</td></tr>
+  <tr><td>Recebeu notificação ou existe ação de busca e apreensão</td><td><span class="vb">ENCAMINHAR À DRA. COM URGÊNCIA</span></td></tr>
+  <tr><td>Contrato já quitado</td><td><span class="vb">ENCAMINHAR À DRA.</span></td></tr>
+  <tr><td>Consórcio, leasing ou financiamento de imóvel</td><td><span class="vb">ENCAMINHAR À DRA.</span></td></tr>
+  <tr><td>Várias outras dívidas comprometendo a renda</td><td>→ verificar também a aba Superendividamento</td></tr>
+  </tbody>
+  </table>
+  </div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-steel">3</div><div class="etit">Validar a situação</div></div>
+  <div class="bloco"><div class="sa s">Pelo que você me contou, vale a pena analisar o seu contrato. Muitos financiamentos têm cobranças que podem ser questionadas, mas isso só dá para saber com segurança depois de uma análise técnica.</div></div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-steel">4</div><div class="etit">Explicar a análise de viabilidade + valor</div></div>
+  <div class="bloco"><div class="stag">🎙 áudio 1 · como funciona</div>
+  <div class="sa s">Funciona assim: antes de entrar com qualquer ação, nossa equipe faz uma análise completa do seu contrato. Ela inclui o cálculo de tudo o que foi cobrado e uma perícia contábil feita por especialista, que mostra se houve juros ou tarifas acima do permitido. O investimento para essa etapa é de <span class="vs">R$ 2.000</span>, que você pode pagar à vista ou parcelar em <span class="vs">até 10 vezes em qualquer cartão</span>.</div>
+  <div class="stag">🎙 áudio 2 · o que acontece depois</div>
+  <div class="sa s">Se a análise mostrar que vale a pena entrar com a ação, essa perícia já passa a fazer parte do processo, como base de toda a nossa tese. E, se mostrar que não compensa, a gente te diz com toda a sinceridade, e você evita gastar com um processo que não traria retorno.</div></div>
+  <div class="nota">O áudio 2 deixa claro, sem constrangimento, que o valor da análise é devido mesmo que o caso não seja viável. Nunca pule essa parte.</div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-gray">5</div><div class="etit">Solicitar documentos para a análise</div></div>
+  <div class="docs">📂 <strong>Documentos para a análise de viabilidade:</strong><br>• Contrato do financiamento completo, com todas as páginas<br>• RG e CPF ou CNH<br>• Comprovante de endereço (água ou luz)<br>• Documento do veículo (CRLV)<br>• Comprovantes das parcelas pagas ou extrato do financiamento<br>• Notificação do banco ou documentos de processo (se tiver)</div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-steel">6</div><div class="etit">Contrato da análise + pagamento</div></div>
+  <div class="bloco"><div class="sa s">Recebi seus documentos, obrigado(a)! Vou te enviar agora o contrato da análise para assinar. Não precisa imprimir nada, você assina direto na tela do celular. Assim que assinar, te mando as opções de pagamento: à vista ou em até 10 vezes no cartão.</div></div>
+  <div class="nota">O contrato só é elaborado depois que os documentos chegarem. Confira a assinatura e o pagamento antes de encaminhar o caso para a advogada.</div>
+</div>
+
+<div class="etapa">
+  <div class="eh"><div class="enum en-green">7</div><div class="etit">Encaminhar para a advogada</div></div>
+  <div class="fech">
+    <div class="flbl">🎙 Após assinatura e pagamento</div>
+    <div class="ftxt">Tudo certo, obrigado(a)! Agora o seu caso segue para a advogada responsável, que vai te chamar aqui para os próximos passos.</div>
+    <div class="fdiv"></div>
+    <div class="flbl">📋 Atendente</div>
+    <div class="fbv">Registre no CRM, transfira o caso para a advogada e encerre a sua parte. Não comente chance de êxito nem valores que podem ser recuperados.</div>
+  </div>
+</div>
+</div><!-- /p9 -->
+
+
+
+<!-- ========================================================= -->
 <!-- P5 · HOME CARE -->
 <!-- ========================================================= -->
 <div id="p5" class="panel">
-<span class="badge bg-blue">Plano ou SUS · Tutela em 48–72h · R$ 5.000 entrada (6x) ou R$ 4.000 à vista</span>
+<span class="badge bg-blue">Plano ou SUS · Tutela de urgência · R$ 8.000 em até 12x em qualquer cartão</span>
 <div class="princip"><strong>Princípio base:</strong> O lead está emocionalmente envolvido — é alguém que ama que precisa de cuidado. Valide o sentimento antes de qualificar. Urgência médica é real. Tutela de urgência pode ser deferida em dias.</div>
 
 <div class="etapa">
   <div class="eh"><div class="enum en-wine">1</div><div class="etit">Recepcionar e identificar a demanda</div></div>
   <div class="bloco"><div class="stag">🎙 abertura — acolher primeiro</div>
   <div class="sa b">Oi, tudo bem? Aqui é [Nome] do Escritório Costa Galvão. Vou te fazer algumas perguntas para entender melhor a situação e ver se consigo te ajudar a garantir o cuidado que seu familiar precisa. Pode ser bem rápido, pode falar?</div></div>
+  <div class="nota">Veio por anúncio? Registre no CRM o código que aparece na mensagem de boas-vindas (ex.: AA-V1, BPC-R2, ZK-R3, IR-C1). É ele que mostra qual anúncio traz cliente.</div>
 </div>
 
 <div class="etapa">
@@ -517,24 +835,36 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
 </div>
 
 <div class="etapa">
+  <div class="eh"><div class="enum en-blue">✓</div><div class="etit">Regras: segue qualificado ou não</div></div>
+  <div style="overflow-x:auto; margin-left:38px;">
+  <table class="ref-table">
+  <thead><tr><th>Situação</th><th>Decisão</th></tr></thead>
+  <tbody><tr><td>Indicação médica por escrito · negativa ou ausência de resposta do plano ou do SUS</td><td><span class="vt">QUALIFICADO</span> → passo 3</td></tr><tr><td>Indicação médica, mas ainda sem pedido ao plano ou ao SUS</td><td><span class="va">QUALIFICADO CONDICIONAL</span> → orientar o pedido formal, com protocolo</td></tr><tr><td>Sem indicação médica por escrito</td><td><span class="va">QUALIFICADO CONDICIONAL</span> → orientar a obter o relatório médico</td></tr><tr><td>Condição do paciente sem necessidade clara de cuidado domiciliar</td><td><span class="vb">ENCAMINHAR À DRA.</span></td></tr></tbody>
+  </table>
+  </div>
+</div>
+
+<div class="etapa">
   <div class="eh"><div class="enum en-blue">3</div><div class="etit">Validação + autoridade + confiança</div></div>
   <div class="bloco"><div class="stag">🎙 validar</div>
   <div class="sa b">Com indicação médica e negativa do plano, você tem os elementos para uma ação de obrigação de fazer. Isso significa que um juiz pode <span class="vb">obrigar o plano a fornecer o serviço em dias</span> — não em meses.</div>
   <div class="stag">🎙 confiança / "onde vocês são?"</div>
-  <div class="sa b">Sei que você não me conhece e que existem muitos golpes envolvendo direitos de saúde. Por isso: somos um escritório registrado na OAB, você pode verificar nossos dados antes de qualquer assinatura. Atuamos em todo o Brasil há mais de 10 anos nessa área. Tudo é feito digitalmente — você assina pelo celular sem sair de casa. Se preferir, posso marcar uma videochamada com nossa advogada para você se sentir mais seguro.</div></div>
+  <div class="sa b">Só para você conhecer quem vai cuidar do caso de [nome]: somos um escritório registrado na OAB, com mais de 10 anos de atuação em todo o Brasil. Tudo é feito digitalmente, e você assina pelo celular, sem sair de casa. Se preferir, posso marcar uma videochamada com nossa advogada.</div></div>
+  <div class="nota">Nunca fale em golpe por iniciativa própria. Se o lead demonstrar desconfiança, use a Objeção 08.</div>
 </div>
 
 <div class="etapa">
   <div class="eh"><div class="enum en-blue">4</div><div class="etit">Mostrar valor — antes do preço</div></div>
   <div class="bloco"><div class="stag">🎙 o que tem a ganhar</div>
-  <div class="sa b">Um processo bem conduzido com tutela de urgência pode garantir que [familiar] receba atendimento domiciliar completo — enfermeiro, fisioterapeuta, médico — custeado pelo plano ou pelo Estado. Esse serviço custaria <span class="vb">entre R$ 8.000 e R$ 20.000 por mês</span> pago do bolso. A ação judicial garante isso indefinidamente.</div>
+  <div class="sa b">Um processo bem conduzido com tutela de urgência pode garantir que [familiar] receba atendimento domiciliar completo — enfermeiro, fisioterapeuta, médico — custeado pelo plano ou pelo Estado. Esse serviço custaria <span class="vb">entre R$ 8.000 e R$ 20.000 por mês</span> pago do bolso. E, com a decisão judicial, esse atendimento pode ser mantido enquanto houver indicação médica.</div>
   <div class="stag">🎙 o que perde ao não agir</div>
   <div class="sa b">Cada dia sem o atendimento adequado impacta diretamente a saúde e a qualidade de vida de quem você ama. O plano conta com o desgaste da família para não recorrer. Quem tem um advogado especialista muda completamente esse cenário.</div></div>
 </div>
 
 <div class="etapa">
   <div class="eh"><div class="enum en-blue">5</div><div class="etit">Explicar representação + honorários</div></div>
-  <div class="bloco"><div class="sa b">O investimento para iniciarmos a ação é de <span class="vb">R$ 5.000</span>, parcelado em até <span class="vb">6 vezes</span> — ou <span class="vb">R$ 4.000 à vista</span>, com desconto. Esse valor cobre toda a nossa atuação até a decisão liminar.<br><br>Quando conseguimos a liminar e o home care é efetivamente implantado, há mais <span class="vb">R$ 5.000</span>, também parcelável em até 6 vezes — mas esse só é devido quando o resultado já está garantido. Ou seja: você só paga a segunda parte quando [nome] já está recebendo o atendimento.<br><br>Se ao final o processo também gerar algum valor financeiro para a família — como indenização por dano moral — nosso êxito nesse caso é de <span class="vb">30%</span> sobre o que for efetivamente recebido. Ou seja: nessa parte, só ganhamos se vocês ganharem.</div></div>
+  <div class="bloco"><div class="sa b">O investimento para conduzirmos toda a ação é de <span class="vb">R$ 8.000</span>, que você pode parcelar em <span class="vb">até 12 vezes em qualquer cartão</span>. Esse valor cobre toda a nossa atuação no processo.<br><br>Para ter uma ideia: um serviço de home care pago do próprio bolso custaria <span class="vb">entre R$ 8.000 e R$ 20.000 por mês</span>. Ou seja, o investimento na ação equivale a cerca de um mês do que a família gastaria, e garante o atendimento de forma contínua.<br><br>Se ao final o processo também gerar algum valor financeiro para a família, como indenização por dano moral, nosso êxito nesse caso é de <span class="vb">30%</span> sobre o que for efetivamente recebido. Ou seja: nessa parte, só ganhamos se vocês ganharem.</div></div>
+  <div class="nota">Se houver indenização por dano moral, os honorários sobre ela são de 30%, além dos R$ 8.000.</div>
 </div>
 
 <div class="etapa">
@@ -546,13 +876,143 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
   <div class="eh"><div class="enum en-green">7</div><div class="etit">Fechamento com urgência real + boas-vindas</div></div>
   <div class="fech">
     <div class="flbl">🎙 Fechamento</div>
-    <div class="ftxt">A tutela de urgência pode ser deferida em 48 a 72 horas após o protocolo. Hoje você ainda age com agilidade para proteger a saúde de [nome]. O que me impede de te enviar o contrato agora para a gente começar?</div>
+    <div class="ftxt">A tutela de urgência pode ser decidida em poucos dias após o protocolo. Hoje você ainda age com agilidade para proteger a saúde de [nome]. O que me impede de te enviar o contrato agora para a gente começar?</div>
     <div class="fdiv"></div>
     <div class="flbl">✅ Após assinatura</div>
     <div class="fbv">Parabéns por essa decisão — você está fazendo o que está ao seu alcance para garantir o melhor cuidado para quem você ama. A partir de agora nossa equipe cuida de tudo. Podem contar com a gente ✨</div>
   </div>
 </div>
 </div><!-- /p5 -->
+
+
+<!-- ========================================================= -->
+<!-- P7 · ISENÇÃO DE IMPOSTO DE RENDA (DOENÇA GRAVE) -->
+<!-- ========================================================= -->
+<div id="p7" class="panel">
+<span class="badge bg-gold">Aposentados e pensionistas com doença grave · Isenção + restituição dos últimos 5 anos · 30% do valor restituído · mínimo R$ 2.000</span>
+<div class="princip"><strong>Princípio base:</strong> A isenção por doença grave (Lei 7.713/88, art. 6º, XIV) vale para <strong>aposentadoria, reforma e pensão</strong> do INSS, do serviço público e da previdência privada, <strong>mesmo com a doença controlada ou em remissão</strong>. Atenção: desde janeiro de 2026, quem ganha até R$ 5 mil já não paga IR. O valor do caso está na <strong>restituição de 2021 a 2025</strong> e em quem ganha acima da faixa de isenção. <strong>O filtro decisivo é ter tido IR descontado no benefício.</strong> Sem desconto, não há o que restituir.</div>
+
+<!-- 1 -->
+<div class="etapa">
+  <div class="eh"><div class="enum en-wine">1</div><div class="etit">Recepcionar e identificar a demanda</div></div>
+  <p class="esub">Responda em até 2 minutos. O lead pode ser o próprio aposentado ou um filho, cônjuge ou familiar que cuida dele.</p>
+  <div class="bloco"><div class="stag">🎙 áudio de abertura</div>
+  <div class="sa g">Olá! Aqui é [Nome] do Escritório Costa Galvão. Vou te fazer algumas perguntas rápidas para saber se existe direito à isenção do Imposto de Renda e à devolução do que já foi descontado da aposentadoria. Em poucos minutos a gente já consegue saber, tudo bem?</div></div>
+  <div class="nota">Veio pelo anúncio? Registre no CRM o código que aparece na mensagem de boas-vindas (IR-C1, IR-C2, IR-C3 ou IR-C4).</div>
+</div>
+
+<!-- 2 -->
+<div class="etapa">
+  <div class="eh"><div class="enum en-gold">2</div><div class="etit">Qualificar o lead · 7 perguntas</div></div>
+  <p class="esub"><em>Uma pergunta por vez. Espere a resposta antes de continuar.</em></p>
+
+  <p class="esub"><strong>Pergunta 1 · Para quem é</strong></p>
+  <div class="bloco"><div class="sa g">A aposentadoria é sua ou de algum familiar? Em qual cidade e estado essa pessoa mora?</div></div>
+
+  <p class="esub"><strong>Pergunta 2 · Tipo de benefício (filtro eliminatório)</strong></p>
+  <div class="bloco"><div class="sa g">É aposentadoria ou pensão? É do INSS, do serviço público ou de previdência privada?</div></div>
+  <div class="yn"><div class="ys">✔ Aposentado, pensionista ou reformado → continua</div><div class="no">✘ Trabalha na ativa, sem aposentadoria → a isenção não alcança salário · verificar auxílio-doença ou aposentadoria por incapacidade</div></div>
+
+  <p class="esub"><strong>Pergunta 3 · Idade</strong></p>
+  <div class="bloco"><div class="sa g">Qual é a idade do aposentado?</div></div>
+
+  <p class="esub"><strong>Pergunta 4 · Valor do benefício</strong></p>
+  <div class="bloco"><div class="sa g">Qual é o valor bruto do benefício por mês, antes dos descontos?</div></div>
+  <div class="nota">Peça o valor exato. Perguntas de "sim ou não" sobre valor geram chute.</div>
+
+  <p class="esub"><strong>Pergunta 5 · Desconto de IR (a mais importante)</strong></p>
+  <div class="bloco"><div class="sa g">No extrato do benefício aparece, ou apareceu nos últimos 5 anos, desconto de Imposto de Renda? Se puder, me mande um print do extrato de pagamento do Meu INSS, ou do contracheque, se for servidor ou previdência privada.</div></div>
+  <div class="nota">O print resolve as perguntas 4 e 5 de uma vez e evita erro de quem não sabe responder.</div>
+
+  <p class="esub"><strong>Pergunta 6 · Doença e data do diagnóstico</strong></p>
+  <div class="bloco"><div class="sa g">Qual é a doença e quando foi o diagnóstico?</div></div>
+  <div class="nota"><strong>Doenças da lei:</strong> câncer (neoplasia maligna), cardiopatia grave, Parkinson, cegueira, esclerose múltipla, nefropatia grave, hepatopatia grave, paralisia irreversível e incapacitante, alienação mental, AIDS, tuberculose ativa, hanseníase, espondiloartrose anquilosante, doença de Paget, contaminação por radiação e fibrose cística. <strong>Doença curada, controlada ou em remissão também vale.</strong></div>
+
+  <p class="esub"><strong>Pergunta 7 · Laudo médico</strong></p>
+  <div class="bloco"><div class="sa g">Você tem laudo médico com o diagnóstico para nos enviar? Pode ser foto aqui pelo WhatsApp mesmo.</div></div>
+  <div class="yn"><div class="ys">✔ Tem laudo → caminho mais rápido · pedir foto agora</div><div class="no">✘ Sem laudo → segue qualificado, mas orientar a pedir ao médico que acompanha (pode ser do SUS) um laudo com CID e data do diagnóstico</div></div>
+</div>
+
+<!-- REGRAS -->
+<div class="etapa">
+  <div class="eh"><div class="enum en-gold">✓</div><div class="etit">Regras: segue qualificado ou não</div></div>
+  <div style="overflow-x:auto; margin-left:38px;">
+  <table class="ref-table">
+  <thead><tr><th>Situação</th><th>Decisão</th></tr></thead>
+  <tbody>
+  <tr><td>Menos de 65 anos · benefício bruto <strong>acima de R$ 3 mil</strong> · teve desconto de IR · doença da lista</td><td><span class="vt">QUALIFICADO</span> → passo 3</td></tr>
+  <tr><td>65 anos ou mais · benefício bruto <strong>acima de R$ 4,9 mil</strong> · teve desconto de IR · doença da lista</td><td><span class="vt">QUALIFICADO</span> → passo 3</td></tr>
+  <tr><td>Servidor público ou previdência privada · teve desconto de IR · doença da lista</td><td><span class="vt">QUALIFICADO</span> → prioridade (tíquete mais alto)</td></tr>
+  <tr><td>Abaixo dos valores acima, mas afirma que teve desconto de IR</td><td><span class="va">CONFIRMAR</span> → pedir o print do extrato antes de decidir</td></tr>
+  <tr><td>Qualificado, mas sem laudo</td><td><span class="va">QUALIFICADO CONDICIONAL</span> → orientar a obter o laudo e já preparar procuração e contrato</td></tr>
+  <tr><td>Doença fora da lista, mas parecida (ex.: AVC com paralisia, Alzheimer, insuficiência renal)</td><td><span class="vb">ENCAMINHAR À DRA.</span> → pode se enquadrar em uma doença da lista</td></tr>
+  <tr><td>Nunca teve desconto de IR nos últimos 5 anos</td><td><span class="vw">SEM DIREITO À RESTITUIÇÃO</span> → verificar outro serviço do escritório</td></tr>
+  <tr><td>Trabalha na ativa, sem aposentadoria ou pensão</td><td><span class="vw">NÃO SE APLICA</span> → verificar auxílio-doença ou aposentadoria por incapacidade</td></tr>
+  </tbody>
+  </table>
+  </div>
+  <p style="height:8px"></p>
+  <div class="alerta">Lead sem direito à restituição: nunca descarte. Aposentado com muitos empréstimos consignados pode ser caso de <strong>Superendividamento</strong>. Pergunte antes de encerrar.</div>
+</div>
+
+<!-- 3 -->
+<div class="etapa">
+  <div class="eh"><div class="enum en-gold">3</div><div class="etit">Validação + autoridade + confiança</div></div>
+  <div class="bloco"><div class="stag">🎙 áudio 1 · validar</div>
+  <div class="sa g">Pelo que você me contou, existe uma <span class="vg">boa possibilidade de direito à isenção do Imposto de Renda</span>. E o mais importante: o que foi descontado nos últimos 5 anos pode ser pedido de volta. Muita gente nem sabe que esse direito existe, e continua pagando sem precisar.</div>
+  <div class="stag">🎙 áudio 2 · "mas eu já estou curado"</div>
+  <div class="sa g">Uma coisa que pouca gente sabe: a isenção vale mesmo com a doença controlada ou em remissão. A Justiça entende que não precisa ter sintomas hoje para manter esse direito.</div>
+  <div class="stag">🎙 áudio 3 · quem vai cuidar do seu caso</div>
+  <div class="sa g">Só para você conhecer quem vai cuidar do seu caso: somos um escritório registrado na OAB, com mais de 10 anos de atuação em todo o Brasil. Você pode acompanhar nosso trabalho no Instagram @costagalvaoadvocacia. Tudo é feito digitalmente, com validade jurídica, e se preferir posso marcar uma videochamada com nossa advogada.</div></div>
+  <div class="nota">Nunca fale em golpe por iniciativa própria. Se o lead demonstrar desconfiança, use a Objeção 08.</div>
+</div>
+
+<!-- 4 -->
+<div class="etapa">
+  <div class="eh"><div class="enum en-gold">4</div><div class="etit">Mostrar valor · antes do preço</div></div>
+  <div class="bloco"><div class="stag">🎙 o que tem a ganhar</div>
+  <div class="sa g">Esse pedido pode trazer de volta <span class="vg">até 60 meses de Imposto de Renda descontado</span>, corrigidos pela Selic. E, para quem ainda tem desconto hoje, o desconto para de vez, todo mês, pelo resto da vida.</div>
+  <div class="stag">🎙 o que perde ao não agir</div>
+  <div class="sa g">A restituição alcança os últimos 5 anos, contados mês a mês. Isso quer dizer que, a cada mês que passa sem dar entrada, um mês de restituição fica para trás e não volta mais.</div>
+  <div class="stag">🎙 "mas eu já não pago IR desde 2026"</div>
+  <div class="sa g">É verdade, a nova isenção de quem ganha até 5 mil começou em 2026. Mas ela não devolve o que foi descontado antes. O que saiu da aposentadoria de 2021 a 2025 continua podendo ser pedido de volta.</div></div>
+</div>
+
+<!-- 5 -->
+<div class="etapa">
+  <div class="eh"><div class="enum en-gold">5</div><div class="etit">Explicar a representação + honorários</div></div>
+  <div class="nota">Regra: 30% do valor restituído, com mínimo de R$ 2.000. Na prática, o mínimo vale para restituições de até R$ 6.666 e, acima disso, entram os 30%. Essa condição já vai no contrato desde a assinatura.</div>
+  <div class="bloco"><div class="sa g">D. [Nome], vou lhe explicar como funciona nossa representação. Nós cuidamos de tudo: análise dos extratos, pedido de isenção e pedido de restituição. O senhor não paga nada agora. Os honorários são de <span class="vg">30% do valor restituído</span>, com valor mínimo de <span class="vg">R$ 2 mil</span>, pagos somente quando a restituição for liberada. Do valor que voltar, a maior parte fica no seu bolso, e o desconto mensal do Imposto de Renda deixa de existir.</div></div>
+</div>
+
+<!-- 6 -->
+<div class="etapa">
+  <div class="eh"><div class="enum en-gray">6</div><div class="etit">Solicitar documentos iniciais</div></div>
+  <div class="docs">📂 <strong>Documentos para procuração e contrato:</strong><br>• RG e CPF<br>• Comprovante de endereço (água ou luz)<br>• Laudo médico com o diagnóstico, CID e data<br>• Exames que comprovem a doença (ex.: biópsia, exames de imagem)<br>• Extrato de pagamento do benefício (Meu INSS) ou contracheques dos últimos 5 anos<br>• Carta de concessão da aposentadoria ou pensão<br>• Declarações de Imposto de Renda dos últimos 5 anos (se declarou)<br>• Previdência privada: informe de rendimentos da entidade</div>
+  <p style="height:8px"></p>
+  <div class="bloco"><div class="sa g">D. [Nome], vimos que existe possibilidade de pedir a isenção e a devolução do Imposto de Renda. Para começarmos, me envie seus documentos pessoais, uma conta de água ou luz e o laudo médico. Pode ser foto aqui pelo WhatsApp mesmo.</div></div>
+</div>
+
+<!-- 7 -->
+<div class="etapa">
+  <div class="eh"><div class="enum en-gray">7</div><div class="etit">Preparar e enviar contrato/procuração</div></div>
+  <p class="esub">Com os documentos em mãos: prepare procuração e contrato no ZapSign em até 2 minutos. Copie o link e envie.</p>
+  <div class="bloco"><div class="sa g">D. [Nome], mandei agora dois links: um da procuração e outro do contrato. Os dois se assinam da mesma forma: clique no link, o sistema pedirá uma selfie, depois você assina com o dedo na tela. Não precisa imprimir nada. Vou mandar um vídeo curtinho mostrando como faz. Qualquer dúvida estou aqui!</div></div>
+  <div class="nota">Verifique no ZapSign a cada 5 minutos. Se não assinar: "D. [Nome], estou vendo aqui que a senhora ainda não assinou, está precisando de ajuda?"</div>
+</div>
+
+<!-- 8 -->
+<div class="etapa">
+  <div class="eh"><div class="enum en-green">8</div><div class="etit">Boas-vindas + documentos restantes + pasta</div></div>
+  <div class="fech">
+    <div class="flbl">✅ Mensagem após assinatura</div>
+    <div class="ftxt">Quero lhe parabenizar por ter escolhido uma equipe de especialistas para cuidar do seu caso! A partir de agora vamos trabalhar para que o desconto do Imposto de Renda pare e para que o que foi descontado volte para o senhor ✨ Seu contato será direto com a Dra. Jucineide Costa, responsável pelo setor de Isenção de Imposto de Renda.</div>
+    <div class="fdiv"></div>
+    <div class="flbl">📂 Solicitar documentos restantes (prazo: 2 dias após assinatura)</div>
+    <div class="fbv">Solicite todos os documentos do checklist, principalmente os extratos ou contracheques dos 5 anos. Organize a pasta no padrão CG e envie ao Operacional no mesmo dia que a documentação completa for recebida.</div>
+  </div>
+</div>
+</div><!-- /p7 -->
 
 
 <!-- ========================================================= -->
@@ -571,9 +1031,9 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
 <tr><td>💸 Não tenho dinheiro</td><td>Barreira financeira</td><td>Começa sem pagar — o benefício resolve exatamente isso</td><td>Todos</td></tr>
 <tr><td>📂 Sem documentos</td><td>Bloqueio imediato</td><td>Me diz o que tem — começa com o que tiver</td><td>Todos</td></tr>
 <tr><td>⏰ Preciso de tempo</td><td>Custo da espera</td><td>Prazo legal não espera — cada dia conta</td><td>Todos</td></tr>
-<tr><td>❌ Já foi negado</td><td>Reframe da negativa</td><td>Foi negado errado — refaz do jeito certo</td><td>BPC, Aux-Ac, Sal-Mat</td></tr>
-<tr><td>🔐 Medo de golpe</td><td>Credibilidade</td><td>OAB + Instagram + só cobra depois = tripla prova</td><td>Todos</td></tr>
-<tr><td>💰 Está caro</td><td>Reframe de valor</td><td>Sem nós = zero. Com nós = R$ X no seu bolso</td><td>Todos</td></tr>
+<tr><td>❌ Já foi negado</td><td>Reframe da negativa</td><td>Foi negado errado — refaz do jeito certo</td><td>BPC, Aux-Ac, Sal-Mat, Zika, IR</td></tr>
+<tr><td>🔐 Medo de golpe</td><td>Credibilidade</td><td>OAB + Instagram + contrato por escrito (e êxito nos benefícios do INSS)</td><td>Todos (versão própria para Home Care e Superendividamento)</td></tr>
+<tr><td>💰 Está caro</td><td>Reframe de valor</td><td>Foque no valor líquido: R$ X no seu bolso</td><td>Todos</td></tr>
 <tr><td>⚖️ Ver outra advogada</td><td>Diferenciação</td><td>Pergunta armadilha + inicia análise sem compromisso</td><td>Todos</td></tr>
 <tr><td>📍 Onde vocês ficam?</td><td>Credibilidade geográfica</td><td>OAB + Instagram + videochamada + 10 anos em todo Brasil</td><td>Todos</td></tr>
 </tbody>
@@ -587,7 +1047,7 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
   <div class="oq">Vou pensar.</div>
   <div class="oa">Claro, é importante decidir com calma. Mas deixa eu te falar uma coisa com sinceridade: cada mês que passa sem dar entrada é um mês a menos de retroativo — e você não paga nada agora. Zero risco. Eu já posso deixar tudo encaminhado sem nenhum compromisso. Se depois você não quiser seguir, é só me avisar. O que está te impedindo de decidir hoje?
   <br><br><em>⚡ Tática: "Vou pensar" quase sempre significa "ainda não confio" ou "não entendi o valor". Antes do script: pergunte qual é a dúvida real.</em>
-  <br><br><strong>🏠 Home Care:</strong> reforce que o investimento inicial pode ser parcelado em até 6x, e a segunda parte só é cobrada quando o home care já estiver implantado.<br><strong>⚠️ Superendividamento:</strong> o valor de entrada varia conforme o volume da dívida — consulte a supervisão antes de informar.</div>
+  <br><br><strong>🏠 Home Care:</strong> reforce que o investimento de R$ 8.000 pode ser parcelado em até 12x em qualquer cartão, o que deixa a parcela bem abaixo do custo de um único dia de home care particular.<br><strong>⚠️ Superendividamento:</strong> o valor de entrada varia conforme o volume da dívida — consulte a supervisão antes de informar.</div>
 </div>
 
 <div class="obj">
@@ -603,7 +1063,7 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
   <div class="oq">Tenho medo de não dar certo.</div>
   <div class="oa">Eu entendo, esse medo é completamente natural. Mas deixa eu te fazer uma pergunta: você sabe por que a gente só cobra se ganhar? Porque o risco não é seu — é nosso. Se a gente não conseguir o resultado, você não paga absolutamente nada. Zero. Então o único cenário onde você perde é não tentar. E aí o direito vai embora para sempre.
   <br><br><em>⚡ Para BPC e Zika: reforce com um caso real semelhante logo após essa resposta — elimina 80% do medo residual.</em>
-  <br><br><strong>🏠 Home Care:</strong> reforce que o investimento é dividido em etapas — parte importante só é cobrada quando o home care já estiver garantido pela liminar.<br><strong>⚠️ Superendividamento:</strong> a estrutura de entrada varia conforme o volume da dívida — consulte a supervisão para informar o valor correto antes desta fala.</div>
+  <br><br><strong>🏠 Home Care:</strong> reforce que o investimento pode ser parcelado em até 12x em qualquer cartão, e que a tutela de urgência pode ser decidida em poucos dias.<br><strong>⚠️ Superendividamento:</strong> a estrutura de entrada varia conforme o volume da dívida — consulte a supervisão para informar o valor correto antes desta fala.</div>
 </div>
 
 <div class="obj">
@@ -611,7 +1071,7 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
   <div class="oq">Não tenho dinheiro.</div>
   <div class="oa">Fique tranquilo — você não precisa pagar nada para começar. Absolutamente nada. Você só paga se realmente receber o benefício — e aí já estará com o dinheiro na conta. "Não ter dinheiro agora" não te impede de dar entrada. Muito pelo contrário: é exatamente por isso que esse benefício existe — para te ajudar nesse momento.
   <br><br><em>⚡ Para BPC/LOAS, Auxílio-Acidente e Salário-Maternidade: reforce que não há nenhum pagamento inicial.</em>
-  <br><br><strong>🏠 Home Care:</strong> o investimento inicial pode ser parcelado em até 6x — ou R$ 4.000 à vista. A segunda parte só é cobrada quando o home care já estiver implantado.<br><strong>⚠️ Superendividamento:</strong> consulte a supervisão para o valor de entrada antes de oferecer parcelamento — varia conforme o volume da dívida.</div>
+  <br><br><strong>🏠 Home Care:</strong> o investimento de R$ 8.000 pode ser parcelado em até 12x em qualquer cartão, sem precisar ter o valor todo agora.<br><strong>⚠️ Superendividamento:</strong> consulte a supervisão para o valor de entrada antes de oferecer parcelamento — varia conforme o volume da dívida.</div>
 </div>
 
 <div class="obj">
@@ -639,16 +1099,17 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
 <div class="obj">
   <div class="ot">Objeção 08 · Gatilho: Prova de credibilidade + Transparência total</div>
   <div class="oq">Tenho medo de ser golpe.</div>
-  <div class="oa">Essa preocupação é muito válida e eu respeito muito você por perguntar. Somos um escritório de advocacia registrado na OAB — você pode verificar nosso registro agora mesmo. Acompanhe nosso trabalho no Instagram: @costagalvaoadvocacia — são mais de 10 anos ajudando famílias em todo o Brasil. E tem mais: a gente não cobra absolutamente nada antes de você receber. <strong>Golpe cobra antes. A gente só cobra depois.</strong> Isso por si só já mostra que estamos do seu lado.
+  <div class="oa">Essa preocupação é muito válida e eu respeito muito você por perguntar. Somos um escritório de advocacia registrado na OAB — você pode verificar nosso registro agora mesmo. Acompanhe nosso trabalho no Instagram: @costagalvaoadvocacia — são mais de 10 anos ajudando famílias em todo o Brasil. E tem mais: nos benefícios do INSS, a gente só cobra no final, quando o benefício é concedido. Tudo fica registrado em contrato, com assinatura digital e validade jurídica.
+  <br><br><strong>🏠 Home Care e ⚠️ Superendividamento:</strong> esses serviços têm honorários na contratação. <strong>Nunca use a frase "só cobramos depois"</strong> com esses leads. Reforce: contrato por escrito, assinatura digital com validade jurídica, registro na OAB verificável e videochamada com a advogada.
   <br><br><em>⚡ Para leads de tráfego pago: envie o link do perfil OAB da advogada responsável. É o elemento de prova mais forte.</em></div>
 </div>
 
 <div class="obj">
   <div class="ot">Objeção 09 · Gatilho: Reframe de valor + Cálculo do que fica</div>
   <div class="oq">Está caro / os honorários são altos.</div>
-  <div class="oa">Entendo essa preocupação, e ela faz todo sentido. Mas deixa eu colocar em perspectiva: você não paga nada agora. E só paga se receber. Do total que o INSS depositar para você, a maior parte fica no seu bolso. No caso do salário-maternidade: dos R$ 6.484 que você recebe, R$ 4.538,80 são seus. Sem a gente: recebe zero. Com a gente: recebe R$ 4.538,80. Qual dos dois cenários é melhor para você?
+  <div class="oa">Entendo essa preocupação, e ela faz todo sentido. Mas deixa eu colocar em perspectiva: você não paga nada agora. E só paga se receber. Do total que o INSS depositar para você, a maior parte fica no seu bolso. No caso do salário-maternidade: dos R$ 6.484 que você recebe, R$ 4.538,80 são seus. Pedindo sozinha, o risco de indeferimento é bem maior. Com a nossa representação, R$ 4.538,80 ficam com você. Faz sentido para você?
   <br><br><em>⚡ Nunca defenda o percentual — reframe para o valor líquido que o cliente recebe.</em>
-  <br><br><strong>🏠 Home Care:</strong> o investimento inicial é de R$ 5.000 (6x) ou R$ 4.000 à vista — e um serviço de home care privado custaria entre R$ 8.000 e R$ 20.000 por mês do seu bolso. A segunda parte (mais R$ 5.000) só é cobrada quando o home care já estiver garantido. Nunca defenda o valor isolado — compare sempre ao custo de não agir, financeiro e emocional.<br><strong>⚠️ Superendividamento:</strong> compare o custo dos juros acumulados sem ação vs. o investimento para resolver a situação. Valor de entrada: consulte a supervisão — varia conforme o volume da dívida.</div>
+  <br><br><strong>🏠 Home Care:</strong> o investimento é de R$ 8.000, em até 12x em qualquer cartão, e um serviço de home care privado custaria entre R$ 8.000 e R$ 20.000 por mês do seu bolso. Nunca defenda o valor isolado — compare sempre ao custo de não agir, financeiro e emocional.<br><strong>⚠️ Superendividamento:</strong> compare o custo dos juros acumulados sem ação vs. o investimento para resolver a situação. Valor de entrada: consulte a supervisão — varia conforme o volume da dívida.</div>
 </div>
 
 <div class="obj">
@@ -674,10 +1135,36 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f4f2ee; c
   <div class="regra">— Nunca prometa resultado — trabalhe com "possibilidade" e "chance"</div>
   <div class="regra">— Nunca descarte um lead sem verificar outro possível benefício</div>
   <div class="regra">— Pasta do cliente: concluída em até 2 dias após a assinatura</div>
+  <div class="regra">— Áudios de até 40 segundos. Se o script for maior, divida em dois áudios</div>
+  <div class="regra">— Nunca fale em golpe por iniciativa própria. Use a Objeção 08 só quando o lead trouxer o assunto</div>
   <div class="regra">— Uma conversa. Um fechamento.</div>
 </div>
 </div><!-- /p6 -->
 
 </div><!-- /wrap -->
+<div class="aviso-legal">© Costa Galvão Advocacia · Jucineide Costa Galvão Sociedade Individual de Advocacia. Material interno e sigiloso, de uso exclusivo da equipe do escritório. É proibida a reprodução, o compartilhamento ou a divulgação fora do escritório, total ou parcial, sem autorização, nos termos da Lei de Direitos Autorais (Lei nº 9.610/1998) e da Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</div>
+
+
+<script>
+(function(){
+  function copiar(texto, btn){
+    function ok(){ btn.textContent = 'Copiado ✓'; btn.classList.add('ok'); setTimeout(function(){ btn.textContent = 'Copiar'; btn.classList.remove('ok'); }, 1600); }
+    function alt(){
+      var ta = document.createElement('textarea'); ta.value = texto; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); ok(); } catch(e) {} document.body.removeChild(ta);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(texto).then(ok, alt); } else { alt(); }
+  }
+  document.querySelectorAll('.sa, .st, .docs, .ftxt').forEach(function(el){
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'cpy'; b.textContent = 'Copiar';
+    b.addEventListener('click', function(e){
+      e.preventDefault();
+      var c = el.cloneNode(true); var x = c.querySelector('.cpy'); if (x) x.remove();
+      copiar(c.innerText.trim(), b);
+    });
+    el.appendChild(b);
+  });
+})();
+</script>
 </body>
 </html>
